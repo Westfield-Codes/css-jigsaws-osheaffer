@@ -14,18 +14,30 @@
         
 
         /* hide the in/out messages*/
-      
+         .middle {
+            opacity:0;
+         }
 
         /* grayscale filter the out images */
+        .out {
+            filter:grayscale(100%);
+        }
 
         
         /* hover states section (no css here) */
 
         /* gray-out the images */
-  
+        .container:hover {
+         background-color:#fff;
+         opacity: 0.5;
+         transition:1s;
+        }
         
         /* show the status message */
-  
+        .middle:hover {
+         opacity: 1 !important;
+         transition:1s;
+        }
 
       </style>
    </head>
@@ -53,6 +65,7 @@
                <p>Pheobe is In</p>
             </div>
          </div>
+         <br>
          <div class="container" id="chandler" >
             <img alt="chandler" src="images/chandler.png">
             <div class="middle">
