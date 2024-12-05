@@ -10,7 +10,25 @@
 	<style>	
     
     /* Identify the parent and child elements below, and apply the positioning, visibility */
-	
+    .tooltip {
+      position:relative;
+      display:inline-block;
+      border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+      visibility:hidden;
+
+      position:absolute;
+      z-index:1;
+      left:105%;
+      top:-5px;
+    }
+    
+    .tooltip:hover .tooltiptext {
+      visibility:visible;
+    }
+
   </style>
 </head>
 
