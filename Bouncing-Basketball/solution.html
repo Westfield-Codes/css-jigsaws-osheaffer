@@ -10,10 +10,13 @@
          /* add half-second ease-in infinite alternating bounce 
           * animation to the #ball */
           #ball {
+                animation: bounce 0.5s ease-in infinite alternate;
           }
          /* set the to and from values for tops and 
           * transforms for the bounce keyframes */
-          @keyframes bounce {     
+          @keyframes bounce {
+                from {top:0px; transform: scale(1,1);}
+                to {top:300px; transform: scale(1,0.5);}   
           }
         </style>
 </head>
